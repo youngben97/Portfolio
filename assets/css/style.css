@@ -1,39 +1,97 @@
-body {
+body{
+    background-color:rgb(38, 1, 48);
+}
+
+
+
+.container {
     background-color: darkslateblue;
 }
 
 /* add height, display, position */
 header {
     width: 100%;
-    background-color: seashell;
-    color: black
+    background-image: -webkit-linear-gradient(rgb(205, 178, 212), rgb(148, 45, 218));
+    color: black;
+    background-size: cover;
+    margin: auto;
 }
 
 h1 {
-    display: inline-block;
-    position: static;
+    align-items: center;
+    display: flex;
     height: 100px;
     width: 100%;
+    justify-content: space-around;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.listItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 35px;
+    margin-left: 200px;
 }
 
 li {
-    display: inline;
+    display: flex;
     position: relative;
     top: 20px;
     left: 20px;
-    width: 200px;
-    height: 100px;
-    background-color: blanchedalmond;
-    margin: 20px;
+    width: 280px;
+    height: 70px;
+    background-color: rgb(255, 228, 205);
+    margin-right: 120px;
     padding: 5px;
-    border: 8px solid palevioletred;
+    border: 8px solid rgba(240, 85, 137, 0.712);
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
 }
 
 .avatar {
-    display: block;
-    position: relative;
+    display: flex;
     top: 50px;
     height: 200px;
     width: 200px;
     margin: 25px;
+}
+main{
+    background-image: -webkit-linear-gradient(rgb(148, 45, 218), rgb(112, 0, 156));
+}
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 200px;
+    background-image: -webkit-linear-gradient(rgb(112, 0, 156), rgb(39, 0, 49));
+    color: rgb(255, 228, 205);
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+}
+.aboutben{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 20px 0px 50px;
+
+}
+
+.avatar{
+    margin: 0px 20px 0px 50px;
 }
