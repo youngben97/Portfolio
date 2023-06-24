@@ -1,8 +1,13 @@
+/*look at stu 06 responsive design to look at a better layout for portfolio site
+(or at least for resizing portfolio site */
+
 body {
     background-color: lightsteelblue;
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     background-color:cornflowerblue;
@@ -10,19 +15,20 @@ body {
 }
 
 .header h1 {
-    display: inline-block;
     font-size: 48px;
+    flex: 1 1;
 }
 
 .header menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1;
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
     font-size: 20px;
 }
 
 .header menu li {
-    display: inline-block;
     margin-left: 25px;
 }
 
@@ -33,14 +39,20 @@ a {
 
 p {
     font-size: 16px;
+    flex: 0 0 200px;
+    align-self: center;
 }
 
-.content {
+main {
     display: flex;
     flex-direction: column;
 }
 
 .card {
+    display: flex;
+    flex: 1 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 20px;
     padding: 50px;
     height: 300px;
@@ -50,6 +62,17 @@ p {
 }
 
 .card h2 {
+    flex: 0 0 200px;
+    align-self: center;
     margin-bottom: 20px;
     font-size: 36px;
 }
+
+.avatar {
+   /* flex: 0 0 200px; */
+   width: 200px;
+}
+
+
+
+/* media query */
