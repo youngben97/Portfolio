@@ -55,7 +55,6 @@ main {
     justify-content: space-between;
     margin: 20px;
     padding: 50px;
-    height: 300px;
     font-family: Arial, Helvetica, sans-serif;
     background-color:cadetblue;
     color:antiquewhite;
@@ -73,6 +72,16 @@ main {
    width: 200px;
 }
 
+#aboutme {
+    scroll-behavior: smooth;
+}
 
+#work {
+    scroll-behavior: smooth;
+}
+
+#contactme {
+    scroll-behavior: smooth;
+}
 
 /* media query */
