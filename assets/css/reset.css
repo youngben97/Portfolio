@@ -15,7 +15,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-size: 100%
+    font-size: 100%;
+    display: flex;
 }
 
 input, select, option, optgroup, textarea, button,
@@ -26,4 +27,7 @@ pre, code {
 
 ol, ul, menu {
     list-style: none;
+    display: flex;
 }
+
+/*if you go with nav menu, which you should, you can remove display: flex from here*/
