@@ -83,4 +83,37 @@ main {
     scroll-behavior: smooth;
 }
 
-/* media query */
+@media screen and (max-width: 992px) {
+    body {
+        background-color:darkseagreen;
+    }
+    .header {
+        background-color:aquamarine;
+        color:hotpink;
+    }
+    .card {
+        background-color:darkolivegreen;
+        color: hotpink;
+    }
+    a {
+        color: hotpink;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color:grey;
+    }
+    .header {
+        background-color:midnightblue;
+        color:goldenrod;
+    }
+    .card {
+        background-color:slategrey;
+        color:goldenrod;
+        border: 9px solid white ;
+    }
+    a {
+        color:goldenrod;
+    }
+}
