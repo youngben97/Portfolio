@@ -67,8 +67,30 @@ main {
     font-size: 36px;
 }
 
-.avatar {
-   width: 200px;
+img {
+    width: 200px;
+}
+
+figure {
+    position: relative;
+    width: 200px;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+figure:hover figcaption {
+    opacity: 1;
 }
 
 #aboutme {
