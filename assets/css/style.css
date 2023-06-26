@@ -1,10 +1,8 @@
-/*look at stu 06 responsive design to look at a better layout for portfolio site
-(or at least for resizing portfolio site */
-
 body {
     background-color: lightsteelblue;
 }
 
+/*The "header" class and all its descendent selectors style the header and navbar of the page */
 .header {
     display: flex;
     justify-content: space-between;
@@ -32,22 +30,24 @@ body {
     margin-left: 25px;
 }
 
+/*This styles all the anchor elements on the page*/
 a {
     color:antiquewhite;
     text-decoration: none;
 }
 
+/*This styles all the paragraph elements on the page*/
 p {
     font-size: 16px;
     flex: 0 0 200px;
     align-self: center;
 }
-
+/*This turns the main container of the page into a flexbox and arranges the elements in a column */
 main {
     display: flex;
     flex-direction: column;
 }
-
+/*This is the container for each of the sections of the page. It is also a flex container*/
 .card {
     display: flex;
     flex: 1 1;
@@ -71,6 +71,9 @@ img {
     width: 200px;
 }
 
+
+/*This is a container for the image that links to a deployed app.
+I have utilized a container in this case so that I could overlay a caption on the image*/
 figure {
     position: relative;
     width: 200px;
@@ -89,10 +92,12 @@ figcaption {
     text-align: center;
 }
 
+/*This styles the image when the cursor hovers over it*/
 figure:hover figcaption {
     opacity: 1;
 }
 
+/*The following three classes style the scroll-movement when you click a link in the nav bar*/
 #aboutme {
     scroll-behavior: smooth;
 }
@@ -105,6 +110,7 @@ figure:hover figcaption {
     scroll-behavior: smooth;
 }
 
+/*These media queries style the page based on the user's viewport*/
 @media screen and (max-width: 992px) {
     body {
         background-color:darkseagreen;
